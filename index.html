@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yhara Landi</title>
+    <link href="https://fonts.googleapis.com/css2?family=Pirata+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+    <header id="siteHeader">
+        <h1>Yhara Landi</h1>
+        <p class="cute"><b>Studentessa Full Stack</b> — corso Epicode 2026</p>
+
+        <nav>
+            <ul>
+                <li><a href="#chiSono">Chi sono</a></li>
+                <li><a href="#competenze">Competenze</a></li>
+                <li><a href="#progetti">Progetti</a></li>
+                <li><a href="#esperienze">Esperienze</a></li>
+                <li><a href="#contatti">Contatti</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+        <div id="chiSono">
+            <h2>Chi sono</h2>
+
+            <figure>
+                <img class="avatar" src="assets/img/waddams.jpeg" alt="Foto profilo">
+                <figcaption>Yhara Landi — Studentessa Full Stack</figcaption>
+            </figure>
+
+            <aside>
+                <em>Curiosità:</em> ho una formazione in beni culturali e ho scoperto la programmazione quasi per
+                    caso, ma ora mi appassiona incredibilmente.
+            </aside>
+
+            <p>Ciao! Mi chiamo Yhara Landi e sto imparando a programmare. Studio sviluppo web con
+                <strong>Epicode</strong> e ogni
+                giorno aggiungo qualcosa di nuovo a questa pagina. Mi piace lavorare in gruppo, leggere documentazione
+                tecnica e capire come funzionano le cose. Vivo a Salerno. Ho una formazione precedente in <em>beni
+                    culturali</em> e <em>Web Design</em>. Cerco un primo ruolo come sviluppatore frontend.</p>
+        </div>
+
+        <div id="competenze">
+            <h2>Competenze</h2>
+            <p>Le tecnologie che vedo durante le prime settimane di corso.</p>
+            <ul class="skillList">
+                <li>HTML — struttura delle pagine</li>
+                <li>CSS — stile e impaginazione</li>
+                <li>Git e GitHub — versionamento del codice</li>
+                <li>Visual Studio Code — editor di lavoro</li>
+            </ul>
+        </div>
+
+        <div id="progetti">
+            <h2>Progetti</h2>
+            <p>I lavori fatti durante le prime settimane di corso.</p>
+
+            <article class="project">
+                <h3>Pagina ricetta</h3>
+                <p>Una pagina con titolo, ingredienti e procedura. Esercizio di markup semantico applicato a un
+                    contenuto reale.</p>
+                <a href="javascript:void();">Vedi su GitHub</a>
+            </article>
+
+            <article class="project">
+                <h3>Card di presentazione</h3>
+                <p>Un biglietto digitale con nome, ruolo e link ai social. Esercizio di sintesi sulla struttura HTML.
+                </p>
+                <a href="javascript:void();">Vedi su GitHub</a>
+            </article>
+                        <a href="project.html">Vedi tutti i progetti...</a>
+
+        </div>
+
+        <div id="esperienze">
+            <h2>Esperienze</h2>
+            <p>Il mio percorso formativo fino ad oggi.</p>
+
+            <table>
+                <caption>Storico esperienze formative</caption>
+                <thead>
+                    <tr>
+                        <th scope="col">Anno</th>
+                        <th scope="col">Ruolo</th>
+                        <th scope="col">Scuola</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>2026</td>
+                        <td>Studentessa Full Stack</td>
+                        <td>Epicode</td>
+                    </tr>
+                    <tr>
+                        <td>2025</td>
+                        <td>Web Designer</td>
+                        <td>ILAS</td>
+                    </tr>
+                    <tr>
+                        <td>2018–2022</td>
+                        <td>Studentessa Beni Culturali</td>
+                        <td>Università degli Studi di Salerno</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div id="contatti">
+            <h2>Contattami</h2>
+            <p>Sono presente su queste piattaforme professionali, dove puoi seguire i miei progetti e contattarmi. Puoi
+                anche scrivermi direttamente compilando il modulo qui sotto.</p>
+
+            <p>Profilo GitHub: <a href="https://github.com/YharaLandi" target="_blank">github.com/yharalandi</a></p>
+            <p>Profilo LinkedIn: <a href="https://www.linkedin.com/in/yhara-landi-a729241b5/"
+                    target="_blank">linkedin.com/in/yharalandi</a></p>
+
+            <form action="#" method="POST">
+
+                <label for="nome">Nome</label><br />
+                <input type="text" id="nome" name="nome" placeholder="Il tuo nome" required><br />
+
+                <label for="email">Email</label><br />
+                <input type="email" id="email" name="email" placeholder="La tua email" required><br />
+
+                <label for="motivo">Motivo del contatto</label><br />
+                <select id="motivo" name="motivo">
+                    <option value="lavoro">Proposta di lavoro</option>
+                    <option value="domande">Domande</option>
+                    <option value="collaborazione">Collaborazione</option>
+                    <option value="altro">Altro</option>
+                </select><br />
+
+                <label for="data">Data preferita per essere ricontattatə</label><br />
+                <input type="date" id="data" name="data"><br />
+
+                <label for="messaggio">Messaggio</label><br />
+                <textarea id="messaggio" name="messaggio" rows="5" required
+                    placeholder="Scrivi qui..."></textarea><br />
+
+                <p>&nbsp;</p>
+                <label for="consenso">
+                    <input type="checkbox" id="consenso" name="consenso" class="consenso" required>
+                    Accetto di essere ricontattata
+                </label><br />
+                <p>&nbsp;</p>
+                <button type="submit">Invia</button>
+
+            </form>
+        </div>
+
+    </main>
+
+    <footer id="siteFooter">
+        <p>&copy; 2026 Yhara Landi</p>
+    </footer>
+
+</body>
+
+</html>

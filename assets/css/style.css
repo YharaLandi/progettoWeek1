@@ -1,0 +1,253 @@
+/* Lasciate ogne speranza, voi ch'intrate*/
+html,
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.7;
+    color: #333333;
+    background-color: #f4f4f4;
+    box-sizing: border-box;
+}
+
+#siteHeader {
+    background-image: url(https://images.unsplash.com/photo-1557682250-33bd709cbe85?q=80&w=1129&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-size: cover;
+    background-position: center;
+    color: #ffffff;
+    text-align: center;
+    padding: 60px 20px 40px;
+    border-bottom: 4px solid rgb(127, 40, 138);
+}
+
+#siteHeader h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    font-style: italic;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.cute {
+    color: rgb(255, 255, 255);
+    font-weight: 600;
+}
+
+nav li {
+    display: inline-block;
+}
+
+nav a {
+    color: #3d0042;
+    font-weight: bold;
+    text-decoration: none;
+    display: inline-block;
+    padding: 5px 15px;
+    margin: 0 6px;
+    border-radius: 4px;
+    border: 1px solid #cc83d3;
+    background-color: rgba(255, 255, 255, 0.062)
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav a:hover {
+    color: #ffffff;
+    background-color: rgba(255, 255, 255, 0.2);
+padding: 15px 15px;
+}
+
+main {
+    max-width: 920px;
+    margin: 0 auto;
+    padding: 0 20px 40px;
+}
+
+main div {
+    padding: 32px;
+    margin-bottom: 24px;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+}
+
+main h2 {
+    font-size: 1.7rem;
+    color: hsl(293, 55%, 35%);
+    text-align: left;
+    font-family: "Pirata One", cursive;
+}
+
+main div h2::before {
+    content: "◊ ";
+    color: hsl(293, 55%, 35%);
+}
+
+main h3 {
+    font-size: 1.15rem;
+    color: hsl(293, 55%, 35%);
+    text-align: left;
+}
+
+#chiSono {
+    background-color: #ffffff;
+    text-align: justify;
+    padding-left: 20px;
+}
+
+#chiSono p:first-of-type {
+    font-size: 1.1rem;
+    font-style: italic;
+    color: #5d3964;
+}
+
+.avatar {
+    width: 110px;
+    height: 110px;
+    border: 4px solid hsl(293, 55%, 35%);
+    border-radius: 50%;
+    float: left;
+    margin: 0 20px 12px 0;
+}
+
+#chiSono p:first-of-type::first-letter {
+    font-size: 3rem;
+    font-weight: bold;
+    float: left;
+    margin-right: 6px;
+    color: hsl(293, 55%, 35%);
+}
+
+
+#competenze {
+    clear: both;
+}
+ 
+.skillList {
+    list-style: none;
+}
+
+.skillList li:nth-child(odd) {
+    background-color: #e9c6eb;
+}
+
+.skillList li:nth-child(even) {
+    background-color: #f4e8f2;
+}
+
+.skillList li:first-child {
+    font-weight: bold;
+}
+
+.skillList li::before {
+    content: "★ ";
+    color: hsl(293, 55%, 35%);
+}
+
+.project:nth-of-type(odd) {
+    background-color: #fbe3fd;
+}
+
+.project:nth-of-type(even) {
+    background-color: #f4e8f2;
+}
+
+.project {
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+}
+
+.project:hover {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.project:first-of-type h3::after {
+    content: "NEW";
+    display: inline-block;
+    padding: 2px 8px;
+    margin-left: 12px;
+    background-color: hsl(293, 55%, 35%);
+    color: #ffffff;
+    border-radius: 16px;
+    font-size: 0.75rem;
+    margin-top: 10px;
+
+}
+
+.project:nth-of-type(2) h3::after {
+    margin-top: 10px;
+
+}
+
+table {
+    border-collapse: collapse;
+}
+
+table caption {
+    font-weight: 600;
+}
+
+table,
+th,
+td {
+    border: 1px solid rgb(154, 35, 170);
+}
+
+label {
+    font-weight: bold;
+    color: rgb(127, 40, 138);
+}
+
+input,
+textarea,
+select {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.95rem;
+    width: 60%;
+    background-color: #df86cb;
+    color: white;
+}
+
+input::placeholder,
+textarea::placeholder {
+    color: #ffffff;
+    font-style: italic;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+    background-color: #9e3183;
+    color: #ffffff;
+}
+
+.consenso {
+    width: auto;
+}
+
+button {
+    color: #ffffff;
+    background-color: hsl(293, 55%, 35%);
+    font-weight: bold;
+    width: 30%;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+button:hover {
+    color: #eeeeee;
+    background-color: hsl(295, 100%, 12%);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+#siteFooter {
+    background-color: #2e1a27;
+    color: #ffffff;
+    text-align: center;
+    font-size: 0.9rem;
+}
