@@ -7,9 +7,10 @@ body {
     font-size: 16px;
     line-height: 1.7;
     color: #333333;
-    background-color: #f4f4f4;
+    background-color: #fbebfd;
     box-sizing: border-box;
 }
+
 
 #siteHeader {
     background-image: url(https://images.unsplash.com/photo-1557682250-33bd709cbe85?q=80&w=1129&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
@@ -23,10 +24,11 @@ body {
 }
 
 #siteHeader h1 {
-    font-size: 2.5rem;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 3rem;
     font-weight: bold;
-    font-style: italic;
-    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    text-shadow: 0 5px 9px rgba(0, 0, 0, 0.5);
+    margin-bottom: -8px;
 }
 
 .cute {
@@ -77,9 +79,10 @@ main div {
 }
 
 main h2 {
-    font-size: 1.7rem;
+    font-size: 2rem;
     color: hsl(293, 55%, 35%);
     text-align: left;
+    margin: 0 0 5px 20px;
     font-family: "Pirata One", cursive;
 }
 
@@ -94,7 +97,11 @@ main h3 {
     text-align: left;
 }
 
-#chiSono {
+#chiSono,
+#competenze,
+#progetti,
+#esperienze,
+#contatti {
     background-color: #ffffff;
     text-align: justify;
     padding-left: 20px;
@@ -149,6 +156,9 @@ main h3 {
     color: hsl(293, 55%, 35%);
 }
 
+#progetti{
+    padding-bottom: 45px;
+}
 .project:nth-of-type(odd) {
     background-color: #fbe3fd;
 }
@@ -159,6 +169,15 @@ main h3 {
 
 .project {
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+    margin-bottom: 10px;
+    padding: 0 0 10px 20px;
+        border-left: solid 6px #eb08b2;
+        border-radius: 10px;
+
+}
+.project h3{
+padding-top: 10px;
+
 }
 
 .project:hover {
@@ -180,6 +199,40 @@ main h3 {
 
 .project:nth-of-type(2) h3::after {
     margin-top: 10px;
+
+}
+.project a{
+    color: #eb08b2;
+    font-size: 1em;
+    text-decoration: none;
+    font-weight: 600;
+    border-bottom: solid 2px #eb08b2;
+}
+.project a:hover {
+    color: #7F288A;
+        border-bottom: solid 2px #7F288A;
+
+}
+.project a:visited {
+    color: #eb08b2;
+}
+
+/*link per la pagina extra*/
+.altriProgetti {
+    color: #eb08b2;
+    font-size: 1em;
+    text-decoration: none;
+    float: right;
+    font-weight: 600;
+    border-bottom: solid 2px #eb08b2;
+}
+
+.altriProgetti:visited {
+    color: #eb08b2;
+}
+.altriProgetti:hover {
+    color: #7F288A;
+        border-bottom: solid 2px #7F288A;
 
 }
 
