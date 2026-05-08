@@ -393,6 +393,10 @@ button:hover {
     background-color: hsl(293, 55%, 35%);
     color: #9e3183;
 }
+#siteFooter p{
+    margin: 0;
+    padding: 10px;
+}
 
 
 /*nuova pagina*/
@@ -418,4 +422,5 @@ button:hover {
     border-bottom: solid 4px #7F288A;
     text-decoration: none;
 }
+
 
