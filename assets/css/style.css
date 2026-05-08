@@ -111,7 +111,8 @@ main h3 {
 #competenze>p,
 #progetti>p,
 #esperienze>p,
-#contatti>p, #chiSono>h2,
+#contatti>p,
+#chiSono>h2,
 #competenze>h2,
 #progetti>h2,
 #esperienze>h2,
@@ -190,9 +191,10 @@ main h3 {
 }
 
 /*progetti*/
-#progetti{
-padding-bottom: 40px;
+#progetti {
+    padding-bottom: 40px;
 }
+
 .project:nth-of-type(odd) {
     background-color: #fbe3fd;
     border-left: solid 6px #eca4da;
@@ -392,6 +394,7 @@ button:hover {
     color: #9e3183;
 }
 
+
 /*nuova pagina*/
 .projectCard {
     background-color: #ffffff;
@@ -402,6 +405,7 @@ button:hover {
     border-radius: 8px;
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
 }
+
 .projectCard a {
     color: #eb08b2;
     font-size: 1em;
@@ -413,4 +417,11 @@ button:hover {
     color: #7F288A;
     border-bottom: solid 4px #7F288A;
     text-decoration: none;
+}
+
+/*questa modifica è stata fatta dopo aver visto tramite ispeziona che che lo user agent stylesheet portava su p un 
+    margin-block-end di 1em;. non trovando altre soluzioni ho pensato di modificarlo singolarmente per togliere la linea, ma non so se è legit*/
+
+p {
+    margin-block-end: 0;
 }
